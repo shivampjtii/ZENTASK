@@ -167,10 +167,10 @@ function pomodoroTimer() {
                     clearInterval(timerInterval)
                     timer.innerHTML = '05:00'
                     session.innerHTML = 'Take a Break'
-                    session.style.backgroundColor = 'let(--blue)'
+                    session.style.backgroundColor = 'var(--blue)'
                     totalSeconds = 5 * 60
                 }
-            }, 10)
+            }, 1000)
         } else {
 
 
@@ -183,10 +183,10 @@ function pomodoroTimer() {
                     clearInterval(timerInterval)
                     timer.innerHTML = '25:00'
                     session.innerHTML = 'Work Session'
-                    session.style.backgroundColor = 'let(--green)'
+                    session.style.backgroundColor = 'var(--green)'
                     totalSeconds = 25 * 60
                 }
-            }, 10)
+            }, 1000)
         }
 
     }
@@ -210,11 +210,8 @@ function pomodoroTimer() {
 pomodoroTimer()
 
 function weatherFunctionality() {
-
-
-    // I have removed API key for security purpose
-    let apiKey = null
-    let city = 'Bhopal'
+    let apiKey = null;
+    let city = 'Ghaziabad'
 
 
 
